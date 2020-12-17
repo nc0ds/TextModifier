@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+.app {
+    width: 95%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: fit-content;
+}
+
+.title > h1 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.app > textarea {
+    background-color: #f1f1f1;
+    width: 95%;
+    height: 18rem;
+    resize: none;
+    padding: 1rem;
+    font-family: Raleway;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: -5px -5px 5px #FFF, 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.app > textarea:focus {
+    box-shadow: -5px -5px 5px #FFF, 5px 5px 5px rgba(0, 0, 0, 0.2), inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 5px #FFF;
+}
+
+.modifiers {
+    width: 95%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modifiers > button {
+    height: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    border: none;
+    background-color: #FFF;
+    transition: 0.2s ease-in-out;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.modifiers > button:hover {
+    background-color: #ccc;
+}
+
+@media (max-width: 1024px) {
+    .modifiers {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .modifiers > button {
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+}
